@@ -1,75 +1,141 @@
 <!DOCTYPE html>
 <html>
 
-    <!-- shift + alt + f for auto-formatting -->
-    <!-- ! tab gives whole skeleton for html -->
+<!-- shift + alt + f for auto-formatting -->
+<!-- ! tab gives whole skeleton for html -->
+
 <head>
     <!-- metadata -->
     <title>title</title>
 </head>
 
 <body>
-    <h1>Chicken</h1>
+    <nav>
+        <ul>
+            <li><a href="home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="emmetdemo.html">Emmet Demo</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Chicken</h1>
+        <hr />
 
-    <!-- can do width="200px" but that is bad practice -->
-    <!-- alt="" short desc of image, will be read out for accessibility -->
-    <img src="pictures/hitcircle.png" alt="hit circle of an osu skin"/>
+        <h2>Poem for br</h2>
+        <p>
+            This is a poem<br />
+            to showcase use of br<br />
+            it adds a line break<br />
+        </p>
+        <!-- can do width="200px" but that is bad practice -->
+        <!-- alt="" short desc of image, will be read out for accessibility -->
+        <img src="pictures/hitcircle.png" alt="hit circle of an osu skin" />
 
-    <a href="https://www.google.com">Link: anchor with href attribute!</a>
-    <a href="about.html">ABOUT PAGE</a>
+        <!-- div is block, span is inline -->
+        <div>
+            <a href="https://www.google.com"><span>Link:</span> anchor with href attribute!</a>
+            <a href="about.html">ABOUT PAGE</a>
+        </div>
 
-    <p>
-        20. <b>bold</b> Our Very First HTML Page
-        <b>b tab</b>
-    </p>
+        <p>
+            20. <b>bold</b> Our Very First HTML Page
+            <b>b tab</b>
+        </p>
 
-    <p>MDN: <a href="https://developer.mozilla.org/en-US/">https://developer.mozilla.org/en-US/</a></p>
-    <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">https://developer.mozilla.org/en-US/docs/Web/HTML/Element</a></p>
+        <p>MDN: <a href="https://developer.mozilla.org/en-US/">https://developer.mozilla.org/en-US/</a></p>
+        <p><a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">https://developer.mozilla.org/en-US/docs/Web/HTML/Element</a>
+        </p>
 
-    <p>
-        22. Paragraph Elements
-    </p>
+        <p>
+            22. Paragraph Elements
+        </p>
 
-    <h2>23. Heading Elements</h2>
-    <p>Lorem ipsum <a href="https://en.wikipedia.org/wiki/Fowl">dolor</a> sit amet consectetur adipisicing elit. Iure, nemo autem obcaecati ipsa impedit libero veniam
-        nihil eius animi facere possimus repudiandae adipisci. Optio ducimus animi aspernatur repellendus fugit! Qui?
-    </p>
-    <h2>General Biology and Habitat</h2>
-    <h3>General Behaviour</h3>
-    <h4>Social Behaviour</h4>
-    <h4>Broodiness</h4>
-    <h5>Don't use these for size</h5>
-    <p>lorem*5 tab</p>
+        <h2>23. Heading Elements</h2>
+        <p>Lorem ipsum <a href="https://en.wikipedia.org/wiki/Fowl">dolor</a> sit amet consectetur adipisicing elit.
+            Iure,
+            nemo autem obcaecati ipsa impedit libero veniam
+            nihil eius animi facere possimus repudiandae adipisci. Optio ducimus animi aspernatur repellendus fugit!
+            Qui?
+        </p>
 
-    <h2>Breeds of Chickens</h2>
-    <ul>
-        <li>Bantam
+        <section>
+            <h2>General Biology and Habitat</h2>
+            <h3>General Behaviour</h3>
+            <h4>Social Behaviour</h4>
+            <h4>Broodiness</h4>
+            <h5>Don't use these for size</h5>
+            <p>lorem*5 tab</p>
+        </section>
+
+        <h2>Breeds of Chickens</h2>
+        <ul>
+            <li>Bantam
+                <ul>
+                    <li>Silkie</li>
+                    <li>Polish</li>
+                </ul>
+            </li>
+            <li>Standard
+                <ul>
+                    <li>Easter Egger</li>
+                    <li>Rhode Island Red</li>
+                </ul>
+            </li>
+        </ul>
+        <ol>
+            <li>Bantam
+                <ol>
+                    <li>Silkie</li>
+                    <li>Polish</li>
+                </ol>
+            </li>
+            <li>Standard
+                <ol>
+                    <li>Easter Egger</li>
+                    <li>Rhode Island Red</li>
+                </ol>
+            </li>
+        </ol>
+        <img src="https://assets.ppy.sh/store/tangible-20190219/button_e@2x.jpg" alt="osu button" />
+
+        <p>ha <sup>ha</sup> ha <sub>ha</sub></p>
+        <p><sup>1</sup>/<sub>2</sub></p>
+
+        <h2>HTML Entities</h2>
+        <a href="https://dev.w3.org/html5/html-author/charref">HTML Entity Codes</a>
+        <p>1 &lt; 6 &gt; 5 &amp; &spades; &hearts; &#9731; &reg;</p>
+
+        <h2>Semantic Markup</h2>
+        <p>Adds meaning to markup. Great for readability, crawlers, accessibility, and so on.</p>
+        <h3>Just like div (some)</h3>
+        <ul>
+            <li>section</li>
+            <li>article</li>
+            <li>nav</li>
+            <li>main</li>
+            <li>header</li>
+            <li>footer</li>
+            <li>aside</li>
+            <li>summary</li>
+            <li>details</li>
+        </ul>
+        <h3>Some others</h3>
+        <ul>
+            <li>time</li>
+            <li>figure</li>
+        </ul>
+    </main>
+    <footer>
+        <p>This is me following along with The Web Developer Bootcamp 2021 by Colt Steele on Udemy</p>
+        <nav>
             <ul>
-                <li>Silkie</li>
-                <li>Polish</li>
+                <li><a href="contact">Contact</a></li>
+                <li><a href="home">Help</a></li>
             </ul>
-        </li>
-        <li>Standard
-            <ul>
-                <li>Easter Egger</li>
-                <li>Rhode Island Red</li>
-            </ul>
-        </li>
-    </ul>
-    <ol>
-        <li>Bantam
-            <ol>
-                <li>Silkie</li>
-                <li>Polish</li>
-            </ol>
-        </li>
-        <li>Standard
-            <ol>
-                <li>Easter Egger</li>
-                <li>Rhode Island Red</li>
-            </ol>
-        </li>
-    </ol>
-    <img src="https://assets.ppy.sh/store/tangible-20190219/button_e@2x.jpg" alt="osu button"/>
+        </nav>
+    </footer>
 </body>
+
 </html>
