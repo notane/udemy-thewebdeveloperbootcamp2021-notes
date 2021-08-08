@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <p>MDN Input Type Examples: <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input</a>
+    </p>
+    <form action="/tacos">
+        <button type="button">This does not submit the form</button>
+        <button type="submit">This submits the form</button>
+        <p>
+            <label for="username">Enter a Username:</label>
+            <input type="text" placeholder="username" name="username" id="username" />
+        </p>
+        <p>
+            <label for="password">Enter a Password:</label>
+            <input type="password" placeholder="password" name="password" id="password" />
+        </p>
+        <p>
+            <label for="color">Enter a Colour:</label>
+            <input type="color" name="color" id="color" />
+        </p>
+        <p>
+            <label for="number">Enter a Number:</label>
+            <input type="number" placeholder="enter a number" min="1" max="1000" step="2" name="num" id="number" />
+        </p>
+        <button>Submit</button>
+    </form>
+    <hr />
+    <button>Outside form; no default behaviour</button>
+    <hr />
+    <h2>Borrowing Searches</h2>
+    <h3>Search Reddit</h3>
+    <form action="https://www.reddit.com/search">
+        <label for="search-reddit">Search Reddit</label>
+        <input type="text" placeholder="Search" name="q" id="search-reddit" />
+        <button>Search</button>
+    </form>
+    <h3>Search Google</h3>
+    <form action="https://www.google.com/search">
+        <label for="search-google">Search Google</label>
+        <input type="text" placeholder="Search" name="q" id="search-google" />
+        <button>Search</button>
+    </form>
+    <h3>Search Youtube</h3>
+    <form action="https://www.youtube.com/results">
+        <label for="search-youtube">Search Youtube</label>
+        <input type="text" placeholder="Search" name="search_query" id="search-youtube" />
+        <button>Search</button>
+    </form>
+
+    <h2>More Inputs</h2>
+    <form action="/birds">
+        <!-- default "checked" or leave out "checked" for unchecked-->
+        <input type="checkbox" name="agree_tos" id="agree" checked />
+        <label for="agree">I agree to everything</label>
+        <p>
+            <label for="size-xs">XS:</label>
+            <input type="radio" name="size" id="size-xs" value="xs" />
+            <label for="size-s">S:</label>
+            <input type="radio" name="size" id="size-s" value="s" />
+            <label for="size-m">M:</label>
+            <input type="radio" name="size" id="size-m" value="m" />
+        </p>
+        <p>
+            <label for="">Please select an entree</label>
+            <select name="meal" id="meal">
+                <option value="fish">Fish</option>
+                <option value="veg" selected>Vegetarian</option>
+                <option value="steak">Steak</option>
+            </select>
+        </p>
+        <p>
+            <label for="cheese">Amount of Cheese:</label>
+            <input type="range" min="1" max="100" step="5" value="75" id="cheese" name="cheese_level" />
+        </p>
+        <p>
+            <label for="requests">Any Special Requests?</label>
+            <br />
+            <textarea name="requests" id="requests" rows="10" cols="40"></textarea>
+        </p>
+        <button>Submit</button>
+    </form>
+
+    <h2>Validations Demo</h2>
+    <form action="/dummy">
+        <p>
+            <label for="first">Enter First Name:</label>
+            <input type="text" name="first" id="first" required />
+        </p>
+        <p>
+            <label for="usenrame">Username</label>
+            <input type="text" name="username" id="username" minlength="5" maxlength="20" required />
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required/>
+        </p>
+        <p>
+            <!-- input:url tab for emmet-->
+            <label for="url">Url</label>
+            <input type="url" name="url" id="url">
+        </p>
+        <button>Submit</button>
+    </form>
+
+</body>
+
+</html>
