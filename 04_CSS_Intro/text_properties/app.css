@@ -1,0 +1,24 @@
+h1 {
+    text-align: center;
+    width: 50%;
+    font-weight: normal; /* normal 400, bold 700, extra bold 900 */
+    text-decoration: underline dotted orange; 
+        /* overline, line-through etc. */ 
+        /* dotted wavy etc. */
+        /* thickness 4px */
+    letter-spacing: 15px;
+    font-size: 80px; /* absolute: px, mm cm etc. relative: em, rem, % etc. */
+    font-family: Futura, Segoe UI, Arial, sans-serif; 
+        /* font stack: font, backup font, any sans-serif font */
+}
+
+/* font-family https://www.cssfontstack.com/ */
+
+p {
+    text-align: right;
+    line-height: 2; /* double space 2 etc. */
+}
+
+a {
+    text-decoration: none;
+}
