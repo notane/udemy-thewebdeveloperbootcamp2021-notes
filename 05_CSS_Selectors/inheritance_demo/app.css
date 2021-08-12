@@ -1,0 +1,24 @@
+body {
+    color: purple;
+}
+
+h1 {
+    color: blue;
+}
+
+section {
+    color: aqua;
+}
+
+form {
+    color: greenyellow;
+}
+/* ^ does not work for the input and button */
+/* certain elements do not inherit by default */
+
+button, input {
+    color: inherit;
+}
+
+/* some are not inheritable 
+on MDN, blue box can say whether element is inheritable */

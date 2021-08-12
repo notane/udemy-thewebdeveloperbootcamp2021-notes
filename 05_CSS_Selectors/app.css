@@ -1,0 +1,151 @@
+
+/* Universal selector */
+/* * {
+    color: pink;
+    background-color: cyan;
+}  */
+
+body {
+    background: #f1faee;
+}
+
+/* element */
+button {
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+
+/* combinator elements */
+h1, h2 {
+    color: #1d3557
+}
+
+/* id */
+#signup {
+    color: #f1faee;
+    background-color: #1d3557;
+}
+
+span {
+    color: #457b9d;
+}
+
+/* class */
+.tag {
+    background-color: #e63946;
+    color: #f1faee;
+    font-size: 16px;
+}
+
+/* descendant selector 
+could use section a, but better to do this for posts*/
+.post a { 
+    color: #457b9d;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+footer a {
+    color: #e63946
+}
+
+/* adjacent selector (combinators +) */
+h2 + button {
+    font-size: 20px;
+}
+/* direct descendant/child > */
+footer > a {
+    color: #457b9d;
+}
+
+/* attribute selector */
+input[type="password"] {
+    color: #e63946
+}
+/* section[class="post"] or section.class {
+    background-color: purple;
+} */
+
+/* *= contains, $= starts with, etc. */
+a[href*="google"] {
+    color: green;
+}
+
+/* pseudo classes */
+
+.post button:hover {
+    background-color: #e63946;
+    color: #f1faee;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.post button:active {
+    background-color: #02c39a;
+}
+
+    /* :checked for radio or checkbox */
+
+.post:nth-of-type(2n-1){
+    background-color: #dfe8dc;
+}
+
+/* pseudo elements */
+.post h2::first-letter {
+    font-size: 35px;
+}
+p::first-line {
+    color: purple;
+}
+::selection {  /* highlight colour */
+    background-color: #fcbf49;
+}
+footer a::after {
+    content: "» →";
+    color: #457b9d;
+}
+footer a::before {
+    content: "« ";
+    color: #457b9d;
+}
+
+/* 
+    Cascading
+    - order matters
+        - second h1 will overwrite the first h1
+
+*/
+/* h1, h2 {
+    color: olivedrab
+} */
+
+/*
+    Specificity
+    - the more specific a selector is, the more it will win
+
+    id > class > element
+    there's math (section p 002, #id 100, nav a.active 012)
+    (0 0 28 < 1 0 0)
+    https://specificity.keegan.st/
+*/
+button:hover {      /* we have another .post button:hover */
+    background-color: olive;    /* does not change post, changes login button */
+    font-size: 10px;        /* changes all buttons b/c never gave bg-colour before*/
+}
+
+/* inline styles
+    - not recommended
+    - doing css in html
+    inline > id > class > element
+*/
+/* important exception
+    - not recommended
+    - makes it the most specific
+    color: red !important
+
+    button {
+        background-color: magenta !important;
+    }
+*/
