@@ -1,0 +1,44 @@
+/* h1 default block */
+/* h1 {
+    background-color: palegoldenrod;
+    border: 1px solid black;
+    display: inline; 
+} */
+
+/* span default inline */
+/* span {
+    background-color: paleturquoise;
+    border: 1px solid black;
+    display: block; 
+        
+} */
+
+p span {
+    /* background-color: palevioletred; */
+    border: 1px solid black;
+    width: 500px;
+    /* inline elements: width/height ignored */
+    padding: 100px; /* doesn't move anything else */
+    margin: 50px;   /* horizontally only */
+}
+
+h1 {
+    background-color: paleturquoise;
+    border: 1px solid black;
+    /* block all these respected */
+    width: 300px;
+    height: 200px;
+    padding: 50px;
+    margin: 100px;
+    display: none; /* on but not shown */
+}
+
+div {
+    height: 200px;
+    width: 200px;
+    background-color: olivedrab;
+    border: 5px solid black;
+    display: inline-block;  /* in line, but w/h/p/m all work */
+    margin: 50px;
+}
+
