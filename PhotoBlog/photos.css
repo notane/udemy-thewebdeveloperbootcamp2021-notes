@@ -1,0 +1,18 @@
+nav {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    border-bottom: solid 2px #f1f1f1;
+    width: 30%;
+    margin-left: calc(10%/6);
+    padding: 1.2em 0;
+}
+
+img {
+    width: 30%;
+    /* margin: 1.6666666%; */
+    margin: calc(10%/6);
+    /* if <img /><img /><img />, this works, 
+    if each img on newlines, it doesn't work b/c whitespace */
+    /* when we learn flexbox, we don't have to worry about it */
+}
